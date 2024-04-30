@@ -19,7 +19,7 @@
  
 <h1 align="center">💦ᴘʀɪɴᴄᴇ-ᴍᴅ💦</h1>
 
-#### 💦💦To Change the owner number click here [CHANGE ONWER](https://github.com/PRINCE-GDS/THE-PRINCE-BOT/blob/main/plugins/main-creator.js#L7)💦💦
+#### 💦💦To Change the owner number click here [CHANGE ONWER](https://github.com/Manexxxie/THE-PRINCE-BOT/blob/main/plugins/main-creator.js#L7)💦💦
 
 ### 𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗣𝗔𝗜𝗥 𝗖𝗢𝗗𝗘
 <p align="left">
@@ -72,7 +72,7 @@
 
 
    <p align="left">
-      <a href="https://chat.whatsapp.com/Jo5bmHMAlZpEIp75mKbwxP"><img height= "40" length= "10" title="Author" src="https://img.shields.io/badge/Support Group-25D366?style=for-the-badge&logo=whatsApp&logoColor=white"></a>
+      <a href="https://chat.whatsapp.com/HfDrgRKpcWMHf0rJmWY4DL"><img height= "40" length= "10" title="Author" src="https://img.shields.io/badge/Support Group-25D366?style=for-the-badge&logo=whatsApp&logoColor=white"></a>
      <p/>
 
 
