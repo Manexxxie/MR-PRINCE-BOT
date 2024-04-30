@@ -98,7 +98,7 @@ export async function handler(chatUpdate) {
                 if (!('banned' in user))
                     user.banned = false
                 if (!isNumber(user.warn))
-                    user.warn = 0
+                    user.warn = 2
                 if (!isNumber(user.level))
                     user.level = 0
                 if (!('role' in user))
@@ -131,7 +131,7 @@ export async function handler(chatUpdate) {
                 global.db.data.chats[m.chat] = {}
             if (chat) {
                 if (!("antiDelete" in chat)) chat.antiDelete = true
-                if (!("antiLink" in chat)) chat.antiLink = false
+                if (!("antiLink" in chat)) chat.antiLink = teue
                 if (!("antiSticker" in chat)) chat.antiSticker = false
                 if (!("antiToxic" in chat)) chat.antiToxic = false
                 if (!("detect" in chat)) chat.detect = false
@@ -139,23 +139,23 @@ export async function handler(chatUpdate) {
                 if (!("isBanned" in chat)) chat.isBanned = false
                 if (!("nsfw" in chat)) chat.nsfw = false
                 if (!("sBye" in chat)) chat.sBye = ""
-                if (!("sDemote" in chat)) chat.sDemote = ""
+                if (!("sDemote" in chat)) chat.sDemote = "user demoted by manexx"
                 if (!("simi" in chat)) chat.simi = false
-                if (!("sPromote" in chat)) chat.sPromote = ""
-                if (!("sWelcome" in chat)) chat.sWelcome = ""
-                if (!("useDocument" in chat)) chat.useDocument = false
-                if (!("viewOnce" in chat)) chat.viewOnce = false
+                if (!("sPromote" in chat)) chat.sPromote = "user promoted by manexx"
+                if (!("sWelcome" in chat)) chat.sWelcome = "hie manexx my owner made me welcome you so how are you"
+                if (!("useDocument" in chat)) chat.useDocument = true
+                if (!("viewOnce" in chat)) chat.viewOnce = true
                 if (!("viewStory" in chat)) chat.viewStory = false
-                if (!("welcome" in chat)) chat.welcome = false
-                if (!("chatbot" in chat)) chat.chatbot = false
+                if (!("welcome" in chat)) chat.welcome = true
+                if (!("chatbot" in chat)) chat.chatbot = true
                 if (!isNumber(chat.expired)) chat.expired = 0
             } else
                 global.db.data.chats[m.chat] = {
                     antiDelete: true,
-                    antiLink: false,
+                    antiLink: true,
                     antiSticker: false,
                     antiToxic: false,
-                    detect: false,
+                    detect: true,
                     expired: 0,
                     getmsg: true,
                     isBanned: false,
@@ -166,18 +166,18 @@ export async function handler(chatUpdate) {
                     sPromote: "",
                     sticker: false,
                     sWelcome: "",
-                    useDocument: false,
-                    viewOnce: false,
+                    useDocument: true,
+                    viewOnce: true,
                     viewStory: false,
-                    welcome: false,
-                    chatbot: false
+                    welcome: true,
+                    chatbot: true
                 }
           
                 
             let settings = global.db.data.settings[this.user.jid]
             if (typeof settings !== "object") global.db.data.settings[this.user.jid] = {}
             if (settings) {
-                if (!("self" in settings)) settings.self = false
+                if (!("self" in settings)) settings.self = true
                 if (!("autoread" in settings)) settings.autoread = false
                 if (!("restrict" in settings)) settings.restrict = false
                 if (!("restartDB" in settings)) settings.restartDB = 0
@@ -804,7 +804,7 @@ export async function presenceUpdate(presenceUpdate) {
             mentions: this.parseMention(caption)
         });
         user.afk = -1;
-        user.afkReason = "";
+        user.afkReason = "manexx is offline";
     }
 }
 
